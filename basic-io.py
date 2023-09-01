@@ -44,3 +44,17 @@ intage = int(input("What is your age? "))
 print("Hello %s %s. You are %d years old." % (first, last, intage))
 floatage = float(input("What is your age? "))
 print("Hello %s %s. You are %.2f years old." % (first, last, floatage))
+
+# split function
+# split function is used to split a string into a list of strings
+# if the split function is not given any parameters, it will split the string on whitespace
+fname, lname = input("Enter your first and last names separated by a space: ").split()
+print(fname, lname)
+
+# if the split function is given a parameter, it will split the string on that parameter
+fname, lname, tn = input("Enter your first and last names and telephone separated by a comma: ").split(",")
+print("Hello %s %s. Your phone number is %s." % (fname, lname, tn))
+
+# we can take in a variable number of inputs at a time
+x = [int(x) for x in input("Enter multiple numbers separated by a space: ").split()]
+print("Numbers are: ", x)
