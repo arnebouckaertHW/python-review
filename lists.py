@@ -34,8 +34,17 @@ print(mixed)
 
 # While loop
 i = 0
-while (i < len(mixed)):
-    print(mixed[i], end=" ")
+while (i < len(nums)):
+    print(nums[i], end=" ")
+    i += 1
+print()
+
+# 5. rewrite the while loop above so that it outputs only the nums
+# that are less than six
+i = 0
+while (i < len(nums)):
+    if (nums[i] < 6):
+        print(nums[i], end=" ")
     i += 1
 print()
 

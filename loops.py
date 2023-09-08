@@ -54,3 +54,10 @@ while (i > 0):
     i -= 1
 print("blastoff!")
 
+# 4. write a while loop that prints out the odd numbers between 1 and 10
+i = 1
+while (i < 10):
+    if(i % 2 == 1):
+        print(i, sep=" ", end=" ")
+    i += 1 
+print("blastoff!")
